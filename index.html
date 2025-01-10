@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="visionneR, frissonner, découvrir, prendre plaisir, S’émerveiller, partager,... vous allez enrichir votre liste de verbe avec notre plateforme.">
+    <meta name="keywords" content="streaming, films, séries, culte, nouveau, visionner, sortie, cinéma, plateforme, découvrir, cinéphile, nouveauté, abonnement, haute-définition, On-demand, Live (direct), Podcast, Flux (stream)">
+    <meta name="author" content="Soriba">
+    <title>Peanut</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/state.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <script src="https://kit.fontawesome.com/e523edf42f.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="img/LOGO.png" alt="Logo" class="logo"></a>
+        </div>
+
+        <nav>
+          <!-- <div>
+            <a href="html/films.html">FILMS</a>
+                <a href="html/series.html">SERIES</a>
+                <a href="html/collections.html">COLLECTIONS</a>
+                <a href="html/contact.html">CONTACT</a>
+          </div> -->
+          
+            <ul class="lien_nav">
+                <li><a href="html/films.html">FILMS</a></li>
+                <li><a href="html/series.html">SERIES</a></li>
+                <li><a href="html/collections.html">COLLECTIONS</a></li>
+                <li><a href="html/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+
+            <input id="search" class="searchbar" type="search" placeholder="&#xF002; RECHERCHE" style="font-family:Arial, FontAwesome" />
+            <button class="button_abonne">ABONNE <i class='fas fa-comment-dots'></i></button>
+        <a href="html/connexion.html" class="user_icon_href"><i class="fa-solid fa-user fa-2xl" id="icon_user"></i></a>
+        <div class="result_search" id="search_result" style="position: absolute; z-index: 1; top: 15%; right: 330px;">
+
+
+        </div>
+        
+            
+
+    </header>
+
+    <main>
+        <section>
+            <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="img/Gladiator2.png" width="100%" height="600px"  alt="gladiator 2">
+      <div class="tendance"><h1><span>TENDANCE</span> DU MOMENT</h1></div>
+      <div class="play_tendance"><a href=""><i class="fa fa-play-circle fa-2xl" style="color: #FFBD59; opacity: 80%;"></i></a></div>
+      <div class="tendance_img">
+        <a href="#"><img src="img/bataille_alger.jpg" alt="" width="15%"></a>
+        <a href="#"><img src="img/elyas.png" alt="" width="14%"></a>
+        <a href="#"><img src="img/medhi.png" alt="" width="14%"></a>
+        <a href="#"><img src="img/little_algerie.png" alt="" width="14%"></a>
+      </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="img/bataille_alger.jpg" width="100%" height="600px" alt="La Bataille d'alger">
+      <div class="tendance"><h1><span>TENDANCE</span> DU MOMENT</h1></div>
+      <div class="tendance_img">
+        <a href="#"><img src="img/elyas.png" alt="" width="14%"></a>
+        <a href="#"><img src="img/medhi.png" alt="" width="14%"></a>
+        <a href="#"><img src="img/little_algerie.png" alt="" width="14%"></a>
+        <a href="#"><img src="img/gladiator2.webp" alt="" width="14%"></a>
+      </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="img/elyas.png" width="100%" height="600px" alt="Benmehdi">
+      <div class="tendance"><h1><span>TENDANCE</span> DU MOMENT</h1></div>
+      <div class="tendance_img">
+        <a href="#"><img src="img/medhi.png" alt="" width="14%"></a>
+        <a href="#"><img src="img/little_algerie.png" alt="" width="14%"></a>
+        <a href="#"><img src="img/gladiator2.webp" alt="" width="14%"></a>
+        <a href="#"><img src="img/bataille_alger.jpg" alt="" width="15%"></a>
+      </div>
+    </div>
+    <div class="mySlides fade">
+        <img src="img/medhi.png" width="100%" height="600px" alt="little algerie">
+        <div class="tendance"><h1><span>TENDANCE</span> DU MOMENT</h1></div>
+        <div class="tendance_img">
+          <img src="img/little_algerie.png" alt="" width="14%">
+          <img src="img/gladiator2.webp" alt="" width="14%">
+          <img src="img/bataille_alger.jpg" alt="" width="15%">
+          <img src="img/elyas.png" alt="" width="14%">
+        </div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+        </section>
+
+        <section class="films_accueil">
+          <h2><span>F</span>ILMS</h2>
+          <ul class="video_liste" id="video_liste_film">
+
+            
+          </ul>
+
+        </section>
+
+        <section class="series_accueil">
+          <h2><span>S</span>ERIES</h2>
+          <ul class="video_liste" id="video_liste_serie">
+
+            
+          </ul>
+
+        </section>
+
+        <section class="collections_accueil">
+          <h2><span>C</span>OLLECTIONS</h2>
+          <ul class="video_liste" id="video_liste_collection">
+
+            
+          </ul>
+
+        </section>
+
+        <section class="avant_footer">
+          <h3>VISIONNEZ  CE QUE <span>VOUS</span> AIMEZ POUR <span>PEANUT !!!!!</span> </h3>
+          <div class="g-container">
+            <ul style="--s: 6">
+              <li> Meilleurs site de streaming de tout les temps</li>
+              <li>Incroyable</li>
+              <li>meilleurs que netflix</li>
+              <li>top 1 site de streaming du monde</li>
+              <li>vive peanut !!!</li>
+              <li>lesgoooooo</li>
+              <!--Fill the first set of data-->
+              <li>Lorem ipsum 1111111</li>
+            </ul>
+          </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+       <div class="row">
+         <div class="footer-col">
+           <h4>RESEAUX</h4>
+           <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://x.com/home?lang=fr" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+          <a href="index.html"><img src="img/LOGO_rm_bg.png" alt="logo peanut"></a>
+           
+         </div>
+         <div class="footer-col">
+           <h4>NAVIGATION</h4>
+           <ul>
+             <li><a href="html/films.html">FILMS</a></li>
+             <li><a href="html/series.html">SERIES</a></li>
+             <li><a href="html/collections.html">COLLECTIONS</a></li>
+             <li><a href="html/abonnement.html">S'ABONNER</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>CONTACT</h4>
+           <ul>
+             <li><a href="html/contact.html">CONTACTEZ-NOUS</a></li>
+             <li><a href="#">FAQ</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>REGLES ET CONDITIONS</h4>
+
+           <ul>
+            <li><a href="#">GERER LES COOKIES</a></li>
+            <li><a href="#">RGPD</a></li>
+            <li><a href="#">CGV ET CGU</a></li>
+            <li><a href="#">ACCESSIBILTE</a></li>
+          </ul>
+         </div>
+       </div>
+      </div>
+   </footer>
+    <script src="js/script.js"></script>
+    
+    
+</body>
+</html>

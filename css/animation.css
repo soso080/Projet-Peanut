@@ -1,0 +1,24 @@
+@keyframes fadein {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+
+    100% {
+        transform: translateY(0);
+        opacity: 1                  ;
+    }
+}
+
+.imgcaption{
+    animation: fadein 2s none;
+}
+
+.imgcaption:hover, .tendance_img img:hover{
+    transform: scale(1.1);
+    filter:brightness(50%); 
+    transition: transform 0.9s ease-in-out;
+  }
+
+

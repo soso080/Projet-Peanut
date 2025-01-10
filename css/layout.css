@@ -1,0 +1,22 @@
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100%;
+    color: white;
+
+}
+
+
+.video_liste{
+    display: flex;
+    justify-content: space-around;
+}
+
+figcaption{
+    text-align: center;
+}
+
+
